@@ -2,45 +2,93 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ma page d'accueil</title>
+    <title>Accueil moderne</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
         }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .card {
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            width: 320px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+
         h1 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .google {
+            background: white;
             color: #333;
         }
-        a {
-            display: block;
-            margin: 15px;
-            font-size: 18px;
-            text-decoration: none;
-            color: #0066cc;
+
+        .wiki {
+            background: #222;
+            color: white;
         }
-        a:hover {
-            color: #ff6600;
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 400px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="card">
     <h1>Bienvenue</h1>
-    <p>Choisissez un site :</p>
+    <p>Accès rapide à vos sites</p>
 
-    <a href="https://www.google.fr" target="_blank">Aller sur Google</a>
-    <a href="https://fr.wikipedia.org" target="_blank">Aller sur Wikipédia</a>
+    <a class="btn google" href="https://www.google.fr" target="_blank">
+        🔍 Google
+    </a>
+
+    <a class="btn wiki" href="https://fr.wikipedia.org" target="_blank">
+        📚 Wikipédia
+    </a>
+
+    <footer>
+        Page simple & moderne
+    </footer>
 </div>
 
 </body>
