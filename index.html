@@ -1,0 +1,50 @@
+Voici un exemple simple de page d’accueil en HTML avec des liens vers Google (version française) et Wikipédia :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma page d'accueil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            display: block;
+            margin: 15px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            color: #ff6600;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bienvenue</h1>
+    <p>Choisissez un site :</p>
+
+    <a href="https://www.google.fr" target="_blank">Aller sur Google</a>
+    <a href="https://fr.wikipedia.org" target="_blank">Aller sur Wikipédia</a>
+</div>
+
+</body>
+</html>
